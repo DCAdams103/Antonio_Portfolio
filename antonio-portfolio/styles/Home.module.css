@@ -6,17 +6,110 @@
 .name {
   text-align: center;
   vertical-align: middle;
+  color: white;
+  opacity: 0;
+  
+  padding-top: 20%;
+  margin-bottom: 0;
+
+  font-size: 60px;
+
+  animation: hideAtStart 3s 0s 1 forwards, nameslide 3s 3.5s 1 forwards;
+
 }
 
-.main {
+.desc {
+
+  color: white;
+  opacity: 0;
+
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
   
+  margin-top: 5px;
+
+  animation-duration: 3s;
+  animation-delay: 4.5s;
+  animation-fill-mode: forwards;
+  animation-name: hideAtStart;
+
+}
+
+.rowOne {
+  display: flex;
+
+}
+
+.showcaseLeft { 
+  display: flex;
+  text-align: center;
+  opacity: 0;
+  margin-left: 5%;
+  margin-top: 5%;
+
+  width: 40vw;
+  height: 70vh;
+  background-color: rgba(0,0,0,.3);
+  border-radius: 150px;
+
+  animation-duration: 3s;
+  animation-delay: 5.5s;
+  animation-fill-mode: forwards;
+  animation-name: hideAtStart;
+
+}
+
+.showcaseRight { 
+  display: flex;
+  text-align: center;
+  opacity: 0;
+  margin-left: 8%;
+  margin-right: 5%;
+  margin-top: 5%;
+
+  width: 40vw;
+  height: 70vh;
+  background-color: rgba(0,0,0,.3);
+  border-radius: 150px;
+
+  animation-duration: 3s;
+  animation-delay: 5.5s;
+  animation-fill-mode: forwards;
+  animation-name: hideAtStart;
+
 }
 
 .footer {
   width: 100%;
   height: 100px;
-  border-top: 1px solid #eaeaea;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@keyframes nameslide {
+
+  from {
+    padding-top: 20%;
+    font-size: 60px;
+  }
+
+  to {
+    padding-top: 0%;
+    font-size: 40px;
+  }
+
+}
+
+@keyframes hideAtStart {
+
+  from {
+    opacity: 0;
+  }
+
+  to { 
+    opacity: 1;
+  }
+
 }
