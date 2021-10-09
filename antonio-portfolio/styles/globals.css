@@ -8,7 +8,7 @@ body {
 
   background-color: rgba(7, 0, 66, 1);
   animation-duration: 3s;
-  animation-delay: 1.5s;
+  animation-delay: 2s;
   animation-fill-mode: forwards;
   animation-name: colorFade;
 

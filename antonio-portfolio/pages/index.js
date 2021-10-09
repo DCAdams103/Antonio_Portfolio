@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { ShowTest } from '../components/showModels.jsx'
-import { ShowTest2 } from '../components/showModels.jsx'
+import { PlantsModel } from '../components/showModels.jsx'
+import { FishModel } from '../components/showModels.jsx'
 
 
 export default function Home() {
@@ -20,18 +20,18 @@ export default function Home() {
 
         <div className={styles.rowOne}>
           <div className={styles.showcaseLeft}>
-            <ShowTest />
+            <PlantsModel />
           </div>
 
           <div className={styles.showcaseRight}>
-            <ShowTest />
+            <FishModel />
           </div>
         </div>
       </main>
 
-      <footer className={styles.footer}>
+      {/* <footer className={styles.footer}>
         
-      </footer>
+      </footer> */}
 
     </div>
 

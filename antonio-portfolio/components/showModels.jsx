@@ -1,39 +1,44 @@
 import React, { Suspense } from 'react'
-import { useGLTF } from '@react-three/drei'
-import { Canvas } from '@react-three/fiber'
-import { OrbitControls } from '@react-three/drei'
-import Model from './Plants.js'
+import { Canvas, useLoader } from '@react-three/fiber'
+import { OrbitControls, useGLTF, useFBX, Environment } from '@react-three/drei'
+import Plants from './Plants'
+import Fish from './Fishbot'
+import { OBJLoader } from 'three-stdlib'
+import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader'
 
-// function Model() {
-//     const { scene } = useGLTF('plants.gltf')
-//     return <primitive object={scene} />
-// }
+// Use npx gltfjsx model.gltf command in admin cmd
 
-export function ShowTest(props) {
+// Mainly used https://uxdesign.cc/make-your-react-websites-fun-by-adding-interactive-3d-objects-1e1d672887e7 for a guide.
+
+function FishGLB() {
+    const { scene } = useGLTF('fish.glb');
+    
+    return <primitive object={scene} />
+}
+
+export function PlantsModel(props) {
     return (
         
-            <Canvas style={{height:'100vh', width: '100vw'}} camera={{position: [50, 50, 80], fov: 1.5 }}>
-                <OrbitControls />
+            <Canvas style={{height:'100%', width: '100%', paddingTop:'20%'}} camera={{position: [0, 0, 275], fov: .5, near: 100, far: 1000}}>
+                <OrbitControls enableZoom={false}/>
                 <ambientLight />
                 
-                
                 <Suspense fallback={null}>
-                    <Model />
+                    <Plants />
                 </Suspense>
             </Canvas>
     )
 }
 
-export function ShowTest2(props) {
+export function FishModel(props) {
     return (
         
-            <Canvas style={{height:'100%', width: '100%', paddingTop:'15%'}} camera={{position: [50, 50, 80], fov: 1.5 }}>
-                <OrbitControls />
+            <Canvas style={{height:'100%', width: '100%'}} camera={{position: [0, 0, 400], fov: 1, near: 100, far: 1000}}>
+                
                 <ambientLight />
-                
-                
+                <OrbitControls enableZoom={false} />
                 <Suspense fallback={null}>
-                    <Model />
+                    <FishGLB />
                 </Suspense>
             </Canvas>
     )

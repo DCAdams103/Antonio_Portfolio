@@ -11,10 +11,11 @@
   
   padding-top: 20%;
   margin-bottom: 0;
+  margin-top: 0;
 
   font-size: 60px;
 
-  animation: hideAtStart 3s 0s 1 forwards, nameslide 3s 3.5s 1 forwards;
+  animation: hideAtStart 3s 0s 1 forwards, nameslide 3s 2s 1 forwards;
 
 }
 
@@ -30,7 +31,7 @@
   margin-top: 5px;
 
   animation-duration: 3s;
-  animation-delay: 4.5s;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
   animation-name: hideAtStart;
 
@@ -54,7 +55,7 @@
   border-radius: 150px;
 
   animation-duration: 3s;
-  animation-delay: 5.5s;
+  animation-delay: 4.5s;
   animation-fill-mode: forwards;
   animation-name: hideAtStart;
 
@@ -74,7 +75,7 @@
   border-radius: 150px;
 
   animation-duration: 3s;
-  animation-delay: 5.5s;
+  animation-delay: 4.5s;
   animation-fill-mode: forwards;
   animation-name: hideAtStart;
 
@@ -96,7 +97,7 @@
   }
 
   to {
-    padding-top: 0%;
+    padding-top: 1%;
     font-size: 40px;
   }
 
