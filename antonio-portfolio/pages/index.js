@@ -4,6 +4,24 @@ import styles from '../styles/Home.module.css'
 import { PlantsModel } from '../components/showModels.jsx'
 import { FishModel } from '../components/showModels.jsx'
 
+function Divider() {
+
+  return (
+    <div className={styles.divider}>
+    </div>
+  )
+
+}
+
+function VertDivider() {
+
+  return (
+    <div className={styles.vertDivider}>
+      
+    </div>
+  )
+
+}
 
 export default function Home() {
   return (
@@ -18,20 +36,37 @@ export default function Home() {
         <h1 className={styles.name}>Antonio Martinez</h1>
         <p className={styles.desc}>A 3D and Animation Portfolio</p>
 
-        <div className={styles.rowOne}>
+        <div className={styles.row}>
           <div className={styles.showcaseLeft}>
             <PlantsModel />
           </div>
+
+          {/* <VertDivider /> */}
 
           <div className={styles.showcaseRight}>
             <FishModel />
           </div>
         </div>
+
+        {/* <Divider /> */}
+
+        <div className={styles.row}>
+          <div className={styles.showcaseLeft}>
+      
+          </div>
+
+          {/* <VertDivider /> */}
+
+          <div className={styles.showcaseRight}>
+            
+          </div>
+        </div>
+
       </main>
 
-      {/* <footer className={styles.footer}>
+      <footer className={styles.footer}>
         
-      </footer> */}
+      </footer>
 
     </div>
 

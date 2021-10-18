@@ -30,8 +30,10 @@ export function PlantsModel(props) {
                 <OrbitControls enableZoom={false}/>
                 
                 <ambientLight intensity={.4}/>
+
                 <pointLight  color="white" intensity={.4} position={[10, 200, 100]} />
                 <pointLight  color="white" intensity={.4} position={[100, 10, 10]} />
+
                 <Suspense fallback={null}>
                     <ToasterGLB />
                 </Suspense>
@@ -50,6 +52,7 @@ export function FishModel(props) {
                 <Suspense fallback={null}>
                     <FishGLB />
                 </Suspense>
+                
             </Canvas>
     )
 }

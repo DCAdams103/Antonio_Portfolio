@@ -6,7 +6,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
-  background-color: rgba(7, 0, 66, 1);
+  background-color: rgba(59, 51, 136, 1);
   animation-duration: 3s;
   animation-delay: 2s;
   animation-fill-mode: forwards;
@@ -25,10 +25,11 @@ a {
 
 @keyframes colorFade {
   from {
-    background-color: rgba(7, 0, 66, 1);
+    background-color: rgba(59, 51, 136, 1);
   }
 
   to {
-    background-color: rgba(59, 51, 136, 1);
+    background-color: rgb(88, 87, 92);
   }
 }
+/* rgb(54, 54, 54) */
