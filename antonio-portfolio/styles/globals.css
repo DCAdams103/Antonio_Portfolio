@@ -7,10 +7,10 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
   background-color: rgba(59, 51, 136, 1);
-  animation-duration: 3s;
+  /* animation-duration: 3s;
   animation-delay: 2s;
   animation-fill-mode: forwards;
-  animation-name: colorFade;
+  animation-name: colorFade; */
 
 }
 
