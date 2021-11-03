@@ -32,14 +32,17 @@ export default function Robots() {
                     </Link>
                 </nav>
 
+                {/* Instructions */}
                 <h2 className={styles.instruction}>Left click & drag to rotate<br/>Right click & drag to move side to side</h2>
 
                 <div className={styles.row}>
                     <div className={styles.showcaseLeft}>
+                        {/* Renders in the Toaster model from showModels.jsx */}
                         <ToasterModel />
                     </div>
 
                     <div className={styles.showcaseRight}>
+                        {/* Renders in the Fish model from showModels.jsx */}
                         <FishModel />
                     </div>
                 </div>

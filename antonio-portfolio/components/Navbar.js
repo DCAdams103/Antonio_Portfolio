@@ -8,6 +8,8 @@ export default function Navbar() {
         <div>
             
             <nav className={styles.nav}>
+
+                {/* Links to different pages in the pages folder */}
                 <Link href='/robots' >
                     <a>3D Robots</a>
                 </Link>
@@ -23,6 +25,7 @@ export default function Navbar() {
                 <Link href='/about' >
                     <a>About Me</a>
                 </Link>
+                
             </nav>
             
         </div>

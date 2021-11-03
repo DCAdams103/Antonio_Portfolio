@@ -32,14 +32,18 @@ export default function Robots() {
                     </Link>
                 </nav>
 
+                {/* Instructions */}
                 <h2 className={styles.instruction}>Left click & drag to rotate<br/>Right click & drag to move side to side<br/>Mouse wheel to zoom </h2>
 
+                {/* First Row of Content */}
                 <div className={styles.row}>
                     <div className={styles.showcaseLeft}>
+                        {/* Renders in the Guitar model from showModels.jsx */}
                         <GeetarModel />
                     </div>
 
                     <div className={styles.showcaseRight}>
+                        {/* Renders in the Circle model from showModels.jsx */}
                         <CircleModel />
                     </div>
                 </div>
