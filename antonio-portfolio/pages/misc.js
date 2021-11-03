@@ -19,6 +19,10 @@ export default function Robots() {
 
                 {/* Navbar with links to other pages */}
                 <nav className={styles.nav}>
+                    <Link href='/'>
+                        <a>Home</a>
+                    </Link>
+                    <> || </>
                     <Link href='/robots' >
                         <a>3D Robots</a>
                     </Link>

@@ -19,6 +19,10 @@ export default function Robots() {
                 
                 {/* Navbar with links to other pages */}
                 <nav className={styles.nav}>
+                    <Link href='/'>
+                        <a>Home</a>
+                    </Link>
+                    <> || </>
                     <Link href='/misc' >
                         <a>3D Misc.</a>
                     </Link>
@@ -35,6 +39,7 @@ export default function Robots() {
                 {/* Instructions */}
                 <h2 className={styles.instruction}>Left click & drag to rotate<br/>Right click & drag to move side to side</h2>
 
+                {/* First Row of Content */}
                 <div className={styles.row}>
                     <div className={styles.showcaseLeft}>
                         {/* Renders in the Toaster model from showModels.jsx */}
