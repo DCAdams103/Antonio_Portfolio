@@ -28,7 +28,7 @@ function GeetarGLB() {
 export function ToasterModel(props) {
     return (
         
-            <Canvas style={{height:'100%', width: '100%'}} camera={{position: [0, 0, 700], fov: .5, near: 50, far: 1000}}>
+            <Canvas style={{height:'70vh', width: '100%'}} camera={{position: [0, 0, 700], fov: .5, near: 50, far: 1000}}>
                 
                 {/* Allows the user to move the camera themselves. */}
                 <OrbitControls enableZoom={false}/>

@@ -37,7 +37,7 @@ export default function Robots() {
                 </nav>
 
                 {/* Instructions */}
-                <h2 className={styles.instruction}>Left click & drag to rotate<br/>Right click & drag to move side to side<br/>Mouse wheel to zoom </h2>
+                <h2 className={styles.instruction}>For best experience, view on Desktop<br/>Left click & drag to rotate<br/>Right click & drag to move side to side<br/>Mouse wheel to zoom </h2>
 
                 {/* First Row of Content */}
                 <div className={styles.row}>

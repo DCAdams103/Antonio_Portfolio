@@ -23,6 +23,7 @@
 .instruction {
     color: white;
     font-weight: bold;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
     margin-bottom: 0;
 }
@@ -68,6 +69,7 @@
     text-align: center;
     font-size: 30px;
     color: white;
+    font-family: 'Raleway', sans-serif;
   }
 
   .nav > a {
@@ -87,3 +89,118 @@
     color: white;
   
   }
+
+  
+/* ------------------------------- Animations Page --------------------------- */
+.parent {
+  width: 45vw;
+  display: block;
+  margin: 0 auto;
+}
+
+.iFrameParent {
+  position: relative;
+  overflow: hidden;
+  
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.aniName {
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 0;
+  margin-top: 0;
+
+  font-size: 60px;
+
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aniDesc, .ytText{
+
+  color: white;
+
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+  display: inline-block;
+  margin-top: 0;
+
+}
+
+.yt {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 1%;
+  margin-left: 1%;
+}
+
+
+
+/* --------------------- About Me Page --------------------- */
+
+.about {
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+
+}
+
+.aboutDesc {
+
+  color: white;
+
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+  margin-top: 0;
+
+}
+
+.aboutFooter {
+  width: 100%;
+  height: 100px;
+  display: block;
+  text-align: center;
+
+  position:absolute;
+  left:0;
+  bottom:0;
+  right:0;
+
+  padding-bottom: 12%;
+
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .parent {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .parent {
+    width: 90%;
+  }
+}
+

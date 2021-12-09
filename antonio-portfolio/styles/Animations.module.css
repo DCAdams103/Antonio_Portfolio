@@ -1,0 +1,53 @@
+.container {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.name {
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 0;
+    margin-top: 0;
+
+    font-size: 60px;
+
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc {
+
+    color: white;
+
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 0;
+
+}
+
+.yt {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 1%;
+    margin-left: 1%;
+}
+
+.videoResponsive {
+    
+    display: block;
+   
+}
+  
+.videoResponsive iframe {
+    display: block;
+    margin: 0 auto;
+    width: 45%;
+}
