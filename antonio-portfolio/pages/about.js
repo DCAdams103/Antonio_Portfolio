@@ -11,7 +11,7 @@ export default function About() {
             <Head>
                 <title>Antonio Martinez - Animations</title>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+                <link rel="preconnect" href="https://fonts.gstatic.com" />
                 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet"></link>
             </Head>
 
@@ -37,9 +37,9 @@ export default function About() {
                 
                 {/* Paragraph about Antonio */}
                 <h1 className={styles.about}>About Me</h1>
-                <p className={styles.aboutDesc}>Hey my name is Antonio, I'm a self taught 3D Modeler <br/>
+                <p className={styles.aboutDesc}>Hey my name is Antonio, I&quot;m a self taught 3D Modeler <br/>
                 and sculpter with some animation experience. I plan on learning texturing, <br/> uv mapping, lighting and better rigging. <br/>
-                I'm currently using blender as a hobby for now but <br/> I'm looking into freelancing and creating my own animated films in the future.
+                I&quot;m currently using blender as a hobby for now but <br/> I&quot;m looking into freelancing and creating my own animated films in the future.
                 </p>
             </main>
 
