@@ -17,7 +17,7 @@ export default function Animations() {
                 <h1 className={styles.aniName}>Antonio Martinez</h1>
 
                 {/* Link to Youtube */}
-                <a className={styles.parent} href='https://www.youtube.com/channel/UCQ6qG4efaJe78iZ8xrTpx4w' target='_blank'>
+                <a className={styles.parent} href='https://www.youtube.com/channel/UCQ6qG4efaJe78iZ8xrTpx4w' target='_blank' rel="noreferrer">
                     <p className={styles.aniDesc}>View my Youtube</p>
                     <img className={styles.yt} src='yt.png' width='50' height='35' />
                 </a>

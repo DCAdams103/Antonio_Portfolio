@@ -45,14 +45,14 @@ export default function About() {
 
             <footer className={styles.aboutFooter}>
                 {/* Link to Youtube */}
-                <a className={styles.parent} href='https://www.youtube.com/channel/UCQ6qG4efaJe78iZ8xrTpx4w' target='_blank'>
+                <a className={styles.parent} href='https://www.youtube.com/channel/UCQ6qG4efaJe78iZ8xrTpx4w' target='_blank' rel="noreferrer">
                     <p className={styles.ytText}>View my Youtube</p>
                     <img className={styles.yt} src='yt.png' width='50' height='35' />
                 </a>
                 
                 <h2>Everything made in Blender</h2>
                 {/* Blender Logo */}
-                <a href='https://www.blender.org/' target='_blank' rel='noreferrer'>
+                <a href='https://www.blender.org/' target='_blank' rel="noreferrer">
                     <img className={styles.blenderLogo} src='blender_logo.png' width='200' height='75' alt="Blender Logo" />
                 </a>
 
