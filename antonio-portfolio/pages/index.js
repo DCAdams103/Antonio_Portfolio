@@ -3,6 +3,8 @@ import styles from '../styles/Home.module.css'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
+import { Container, Grid } from '@mui/material';
+
 export default function Home() {
   return (
 
@@ -12,16 +14,54 @@ export default function Home() {
       </Head>
       
       <main className={styles.main}>
+        <Grid container
+              spacing={0}
+              direction="row"
+              alignItems="center"
+              className={styles.namedesc}>
+                
+          <Grid item xl={3}>
+            <div className={styles.topdiv}>
+              <div className={styles.another}>
+                <p className={styles.navlist}>Robots</p> 
+              </div>
+            </div>
+            <div className={styles.topdiv}>
+              <div className={styles.another}>
+                <p className={styles.navlist}>Miscellaneous</p> 
+              </div>
+            </div>
+            <div className={styles.topdiv}>
+              <div className={styles.another}>
+                <p className={styles.navlist}>Animations</p> 
+              </div>
+            </div>
+            <div className={styles.topdiv}>
+              <div className={styles.another}>
+                <p className={styles.navlist}>About Me</p> 
+              </div>
+            </div>
+          </Grid>
 
-        <h1 className={styles.name}>Antonio Martinez</h1>
-        <p className={styles.desc}>A 3D and Animation Portfolio</p>
+          <Grid item xs={3}>
+            <h1 className={styles.nametext}>Antonio Martinez</h1>
+            <p className={styles.nametext}>A 3D and Animation Portfolio</p>
+          </Grid>
 
-        {/* Navbar with links to other pages */}
+          <Grid item xs={3}>
+            <img src="farmer_boy_test.png" width="60%" />
+          </Grid>
+
+        </Grid>
+          
+
+        {/* Navbar with links to other pages
         <Navbar />
+        */}
 
       </main>
 
-      <Footer />
+      {/*<Footer />*/}
 
     </div>
 
