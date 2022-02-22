@@ -22,7 +22,9 @@ export default function Home() {
                 
           <Grid item xl={3}>
             <div className={styles.topdiv}>
+              <p style={{display: 'inline', alignItems: 'center'}}>&#9675;</p>
               <div className={styles.another}>
+                
                 <p className={styles.navlist}>Robots</p> 
               </div>
             </div>

@@ -33,12 +33,8 @@
 .another {
   position:absolute;
   padding-left: 5%;
-  transition: transform 1000ms;
-  opacity: 0.3;
-}
-
-.navlist {
-  
+  transition: transform 250ms, opacity 250ms ease-in-out;
+  opacity: 0.5;
 }
 
 .another:hover {
